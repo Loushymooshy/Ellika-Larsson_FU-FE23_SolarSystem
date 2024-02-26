@@ -13,6 +13,10 @@ ul {
     align-items: center;
 }
 
+main {
+    
+}
+
 .circle {
 
 width: 400px;
@@ -23,7 +27,7 @@ background-color: gray;
 
 .planet-container {
     height: 100vh;
-    margin-left: 70rem;
+    margin-left: 20rem;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -98,6 +102,7 @@ align-items: center;
    
     transform: translateY(-50%);
     background-color: #FFD029;
+    transition: all .2s ease-in-out;
 }
 .sun::before {
     content: "";
@@ -110,6 +115,11 @@ align-items: center;
     border: 60px solid rgba(255, 209, 41, 0.1); /* Inner border with 50% opacity (red in this example) */
     box-shadow: 0 0 0 60px rgba(255, 209, 41, 0.06)
   }
+
+  .sun:hover {
+    transform: scale(1.03) translateY(-50%);
+    }
+ 
 .ring {
     width: 200px;
     height: 200px;
@@ -134,16 +144,17 @@ align-items: center;
     margin: 3vw;
 }
 .planet:hover {
-    transform: scale(1.1) rotateZ(-20deg);
     cursor: pointer;
+}
+.stransform:hover {
+    transform: scale(1.2) rotateZ(-20deg);
+}
+.btransform:hover {
+    transform: scale(1.5);
 }
 
 
 /* Next section */
-.starter {
-    height: 100vh;
-    width: auto;
-}
 .information {
     height: 100vh;
     width: 100vw;
@@ -156,4 +167,16 @@ align-items: center;
     text-align: right;
     width: 640px;
     height: 682px;
+}
+
+.scroll-container {
+height: 100vh;
+width: auto;
+overflow-y: scroll;
+scroll-snap-type: y mandatory;
+}
+
+.scroll {
+scroll-snap-align: start;
+scroll-snap-stop: always;
 }
