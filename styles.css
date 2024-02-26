@@ -29,38 +29,6 @@ justify-content: center;
 align-items: center;
 }
 
-/* Planet sizes */
-
-.micro {
-height: 14px;
-width: 14px;
-}
-
-.small{
-    height: 26px;
-    width: 26px;
-}
-
-.medium{
-    height: 66px;
-    width: 66px;
-}
-
-.large{
-    height: 144px;
-    width: 144px;
-}
-.larger{
-    height: 188px;
-    width: 188px;
-}
-/* .god{
-    height: 14px;
-    width: 14px;
-} */
-
-
-
 .mercury {
     background-color: #888888;
     height: 14px;
@@ -121,16 +89,27 @@ width: 14px;
 
 .sun {
     position: fixed;
-    top: 50%; /* Adjust as needed */
-    left: -45vw; /* Adjust to control how much of the circle is visible */
-    width: 50vw; /* Adjust size as needed */
-    height: 50vw; /* Adjust size as needed */
+    top: 50%; 
+    left: -45vw; 
+    width: 50vw; 
+    height: 50vw; 
     border-radius: 50%;
-    box-shadow: 0 0 20px rgb(255, 199, 125); /* Add shadow for depth */
+    
+   
     transform: translateY(-50%);
     background-color: #FFD029;
 }
-
+.sun::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: -45px; /* Adjust as needed */
+    left: 0px; /* Adjust as needed */
+    right: -60px; /* Adjust as needed */
+    bottom: -45px; /* Adjust as needed */
+    border: 60px solid rgba(255, 209, 41, 0.1); /* Inner border with 50% opacity (red in this example) */
+    box-shadow: 0 0 0 60px rgba(255, 209, 41, 0.06)
+  }
 .ring {
     width: 200px;
     height: 200px;
@@ -167,5 +146,14 @@ width: 14px;
 }
 .information {
     height: 100vh;
-    width: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information__container {
+    text-align: right;
+    width: 640px;
+    height: 682px;
 }
