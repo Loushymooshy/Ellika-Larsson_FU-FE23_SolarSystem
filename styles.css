@@ -11,9 +11,7 @@ ul {
     justify-content: center;
     align-items: center;
 }
-li {
-    margin: 3vw;
-}
+
 .circle {
 
 width: 400px;
@@ -153,8 +151,20 @@ width: 14px;
 
 .planet {
     transition: all .2s ease-in-out;
+    margin: 3vw;
 }
 .planet:hover {
     transform: scale(1.1) rotateZ(-20deg);
     cursor: pointer;
+}
+
+
+/* Next section */
+.starter {
+    height: 100vh;
+    width: auto;
+}
+.information {
+    height: 100vh;
+    width: auto;
 }
