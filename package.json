@@ -1,0 +1,16 @@
+{
+  "name": "ellika-larsson_fu-fe23_solarsystem",
+  "version": "1.0.0",
+  "description": "Solaris school examination",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Ellika-Larsson_FU-FE23_SolarSystem"
+  },
+  "author": "Ellika Larsson",
+  "license": "ISC"
+}
