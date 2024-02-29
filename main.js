@@ -1,2 +1,2 @@
-import { getApiKey } from "./js/apiKey";
+import { getApiKey } from "./js/apiKey.js";
 console.log(getApiKey);

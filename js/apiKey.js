@@ -1,4 +1,4 @@
- async function getApiKey() {
+ export async function getApiKey() {
     try {
         const response = await fetch('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys', {
             method: 'POST', 
