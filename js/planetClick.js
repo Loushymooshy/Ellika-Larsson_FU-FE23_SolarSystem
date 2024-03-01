@@ -9,7 +9,6 @@ export function planetEventListner() {
         try {
             let planetInfo = await getPlanetInfo(planetName);
             let planetChosen = planetInfo.bodies.filter(x => x.name.toLowerCase() === planetName.toLowerCase());
-            console.log(planetChosen)
             document.querySelector('#planet-name').innerText = planetChosen[0].name;
             document.querySelector('#latin-name').innerText = planetChosen[0].latinName;
             document.querySelector('#desc').innerText = planetChosen[0].desc;
@@ -30,8 +29,10 @@ export function planetEventListner() {
                 moonItem.innerText = moon;
                 moonList.appendChild(moonItem);
 
-               window.scrollTo({top:0,left:100, behavior: "smooth"});
+               
             });
+
+            window.scrollTo({left: 0, top: document.body.scrollHeight, behavior: "smooth"});
 
             // console.log(planetInfo);
         } catch (error) {
