@@ -35,8 +35,7 @@ export function planetEventListner() {
             window.scrollTo({left: 0, top: document.body.scrollHeight, behavior: "smooth"});
 
             let sun = document.querySelector('.sun');
-            sun.className ='sun'
-            console.log(`sun-${planetName.toLowerCase()}`);
+            sun.className = 'sun'
             sun.classList.add(`sun-${planetName.toLowerCase()}`);
             
 

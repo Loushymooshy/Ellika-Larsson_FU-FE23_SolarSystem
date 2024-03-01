@@ -1,16 +1,11 @@
 import { getPlanetInfo } from "./fetchAPI.js";
 
-async function searchPlanets(searchString) {
-let planets = await getPlanetInfo();
+export async function searchPlanets(searchString) {
 
+let planets = await getPlanetInfo();
 let lowerCaseSearchString = searchString.toLowerCase();
 
-let matchingPlanets = planets.filter(planet => planet.name.toLowerCase().includes(lowerCaseSearchString));
 
-return matchingPlanets;
-
+return  planets.bodies.find(body =>
+    body.name.toLowerCase().includes(lowerCaseSearchString));
 }
-
-searchPlanets("jup").then(matchingPlanets => {
-    console.log(matchingPlanets); 
-});
