@@ -282,3 +282,6 @@ color: #FFD029;
     display: block;
     
 }
+.moon-block__list {
+    margin: 15px 0;
+}
