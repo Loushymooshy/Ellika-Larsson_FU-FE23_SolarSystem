@@ -23,11 +23,13 @@ height:400px;
 border-radius: 50%;
 background-color: gray;
 }
-
-.planet-container {
+.starter { 
     height: 100vh;
     width: 100vw;
-    margin-left: 10rem;
+    display: flex;
+}
+.planet-container {
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,11 +110,11 @@ background-color: gray;
     content: "";
     position: absolute;
     border-radius: 50%;
-    top: -45px; /* Adjust as needed */
-    left: 0px; /* Adjust as needed */
-    right: -60px; /* Adjust as needed */
-    bottom: -45px; /* Adjust as needed */
-    border: 60px solid rgba(255, 209, 41, 0.1); /* Inner border with 50% opacity (red in this example) */
+    top: -45px; 
+    left: 0px; 
+    right: -60px;
+    bottom: -45px; 
+    border: 60px solid rgba(255, 209, 41, 0.1); 
     box-shadow: 0 0 0 60px rgba(255, 209, 41, 0.06)
   }
 
@@ -155,7 +157,7 @@ background-color: gray;
 
 
 /* Next section */
-.information {
+ .information {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -167,28 +169,33 @@ background-color: gray;
     text-align: right;
     width: 640px;
     height: 682px;
-}
+} 
 
-.scroll-container {
+  .scroll-container {
 height: 100vh;
 width: 100vw;
 overflow-y: scroll;
 scroll-snap-type: y mandatory;
 overflow-x: hidden;
-}
+}  
 
 /* .scroll {
 scroll-snap-align: start;
 scroll-snap-stop: always;
-} */
+}  */
+
 
 .title {
-    position:fixed;
-    right: 10rem;
-    top: 5rem;
+    position:relative;
+    left: 70%;
+    top: 10%;
     text-align: right;
+    height: 10%;
 }
 
+section {
+    height: 100vh;
+}
 
 .title__big {
     font-size: 3.75rem;
