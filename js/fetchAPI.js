@@ -13,9 +13,8 @@ export async function getPlanetInfo(planetName){
         });
         const data = await response.json();
         //window.localStorage.setItem("planets", JSON.stringify(data.bodies))
-
+        return data;
        // return data.bodies.filter(x => x.name.toLowerCase() === planetName.toLowerCase());
-       console.log(data)
     }
     catch (error) {
         console.error('error:', error);

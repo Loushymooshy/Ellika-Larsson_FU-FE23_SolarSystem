@@ -259,9 +259,6 @@ color: #FFD029;
     padding: 5% 0;
 }
 
-.info-block__section {
-
-}
 
 .info-block__title {
     font-family: "Secular One", sans-serif;
@@ -284,4 +281,12 @@ color: #FFD029;
 }
 .moon-block__list {
     margin: 15px 0;
+}
+
+.info-block__content {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: start;
 }
