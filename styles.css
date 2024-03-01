@@ -87,10 +87,80 @@ background-color: gray;
     width: 66px;
 }
 
+
+.sun.sun-merkurius {
+    background-color: #888888;
+ 
+}
+.sun.sun-merkurius::before {
+    border-color: #88888820;;
+    box-shadow: 0 0 0 60px#88888810;;
+}
+.sun.sun-venus {
+
+    background-color: #E7CDCD;
+}
+.sun.sun-venus::before {
+    border-color: #e7cdcd20;;
+    box-shadow: 0 0 0 60px#e7cdcd10;;
+}
+.sun.sun-jorden {
+    background-color: #428ED4;
+   
+}
+.sun.sun-jorden::before{
+    border-color: #428dd420;;
+    box-shadow: 0 0 0 60px#428dd410;;
+}
+.sun.sun-mars {
+
+    background-color: #EF5F5F;
+    
+}
+.sun.sun-mars::before {
+    border-color: #ef5f5f20;;
+    box-shadow: 0 0 0 60px#ef5f5f10;;
+}
+.sun.sun-jupiter {
+    background-color: #E29468;
+  
+}
+.sun.sun-jupiter::before {
+    border-color: #e2956820;;
+    box-shadow: 0 0 0 60px#e2956810;
+}
+.sun.sun-saturnus {
+    background-color: #C7AA72;
+   
+}
+.sun.sun-saturnus::before {
+    border-color: #c7ab7220;;
+    box-shadow: 0 0 0 60px#c7ab7210;;
+}
+.sun.sun-uranus {
+    background-color: #C9D4F1;
+    
+}
+.sun.sun-uranus::before {
+    border-color: #c9d4f120;;
+    box-shadow: 0 0 0 60px#c9d4f110;;
+}
+
+
+.sun.sun-neptunus::before { 
+    border-color: #7a91a720;;
+    box-shadow: 0 0 0 60px#7a91a710;;
+}
+.sun.sun-neptunus {
+    background-color: #7A91A7;
+    
+}
+
+
 .blue-gradient {
     width: 100vh;
     height: auto;
-    background-image: linear-gradient(to right,#0C164D,#190B22);
+    background-image: linear-gradient(to right,#0C164D ,#190B22 60%);
 }
 
 
@@ -101,12 +171,11 @@ background-color: gray;
     width: 50vw; 
     height: 50vw; 
     border-radius: 50%;
-    
-   
-    transform: translateY(-50%);
     background-color: #FFD029;
+    transform: translateY(-50%);
     transition: all .2s ease-in-out;
 }
+
 .sun::before {
     content: "";
     position: absolute;
@@ -178,12 +247,6 @@ width: 100vw;
 
 }  
 
-/* .scroll {
-scroll-snap-align: start;
-scroll-snap-stop: always;
-}  */
-
-
 .title {
     position:relative;
     left: 70%;
@@ -252,8 +315,8 @@ color: #FFD029;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.200);
+    border-top: 1px solid rgba(255, 255, 255, 0.200);
     margin: 5% 0;
     padding: 5% 0;
 }
@@ -276,6 +339,7 @@ color: #FFD029;
     line-height: 1.913rem;
     text-transform: capitalize;
     display: block;
+    opacity: 90%;
     
 }
 .moon-block__list {
