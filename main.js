@@ -1,2 +1,4 @@
-import { getApiKey } from "./js/apiKey.js";
-console.log(getApiKey);
+import { planetEventListner } from "./js/planetClick.js";
+
+planetEventListner()
+

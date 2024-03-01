@@ -2,6 +2,7 @@
 body {
     margin: 0;
     color: white;
+   
     
 }
 ul {
@@ -13,9 +14,7 @@ ul {
     align-items: center;
 }
 
-main {
-    
-}
+
 
 .circle {
 
@@ -27,10 +26,11 @@ background-color: gray;
 
 .planet-container {
     height: 100vh;
-    margin-left: 20rem;
-display: flex;
-justify-content: center;
-align-items: center;
+    width: 100vw;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mercury {
@@ -171,12 +171,41 @@ align-items: center;
 
 .scroll-container {
 height: 100vh;
-width: auto;
+width: 100vw;
 overflow-y: scroll;
 scroll-snap-type: y mandatory;
+overflow-x: hidden;
 }
 
-.scroll {
+/* .scroll {
 scroll-snap-align: start;
 scroll-snap-stop: always;
+} */
+
+.title {
+    position:fixed;
+    right: 10rem;
+    top: 5rem;
+    text-align: right;
+}
+
+
+.title__big {
+    font-size: 3.75rem;
+    font-family: "Secular One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin: 0;
+}
+.title__sub {
+    font-size: 1.5rem;
+font-family: "Lora", sans-serif;
+font-weight: 400;
+font-style: normal;
+text-transform: uppercase;
+letter-spacing: 0.5rem;
+margin: 0;
+color: #FFD029;
 }

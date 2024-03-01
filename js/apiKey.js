@@ -10,7 +10,7 @@
         
         const data = await response.json();
         const api_key = data.key;
-        console.log(api_key);
+        // console.log(api_key);
         return api_key;
     }   catch (error) {
         console.error('error:', error);

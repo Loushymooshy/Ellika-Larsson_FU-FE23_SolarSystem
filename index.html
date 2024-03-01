@@ -5,57 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solaris</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Secular+One&display=swap" rel="stylesheet">
 </head>
-<body>
-    <main class="blue-gradient scroll-container">
+<body class="blue-gradient">
+    <main class=" scroll-container">
     
         <section class="starter scroll">
+            <div class="title">
+                <h1 class="title__big">Solsystemet</h1>
+                <h2 class="title__sub">Solaris</h2>
+            </div>
             <div class="planet-container">
-                <figure class="yellow sun" ></figure>
+                <figure class="yellow sun" id="solen" alt="Solen"></figure>
                 <ul>
-                    <li class="planet mercury btransform" alt="mercury" id="mercury"></li>
+                    <li class="planet mercury btransform" alt="mercury, merkurius" id="merkurius"></li>
                     <li class="planet venus btransform" alt="venus" id="venus"></li>
-                    <li class="planet earth btransform" alt="earth" id="earth"></li>
+                    <li class="planet earth btransform" alt="earth" id="jorden"></li>
                     <li class="planet mars btransform" alt="mars" id="mars"></li>
                     </ul>
                     <ul>
                     <li class="planet jupiter stransform" alt="jupiter" id="jupiter"></li>
-                    <li class="planet saturn stransform" alt="saturn" id="saturn">
+                    <li class="planet saturn stransform" alt="saturn" id="saturnus">
                         <div class="ring"></div>
                         <div class="body"></div>
                         <div class="up" ></div>
                     </li>
                     <li class="planet uranus stransform" alt="uranus" id="uranus"></li>
-                    <li class="planet neptune stransform" alt="neptune" id="neptune"></li>
+                    <li class="planet neptune stransform" alt="neptune" id="neptunus"></li>
                 </ul>
             </div>
         </section>
         <section class="information scroll">
             <div class="information__container">
                 <div>
-                    <h1>Planet</h1>
-                    <h2 class="fancy">Real name</h2>
-                    <p>Qui nulla ea incididunt ipsum tempor est amet aute proident ea est occaecat cillum et. Tempor officia nulla ullamco consequat do commodo irure officia consectetur occaecat. Velit ut ipsum ullamco nulla. Elit consectetur consequat proident labore non nisi excepteur Lorem minim commodo consectetur proident exercitation dolor. Irure Lorem excepteur et proident consectetur officia proident do magna incididunt.
-                        Mollit nisi ad laborum irure sint duis laborum est occaecat. Occaecat nulla eiusmod reprehenderit laborum et minim tempor laborum sit. Fugiat velit aliqua est Lorem ex. Consequat ad proident reprehenderit nisi enim esse dolor anim occaecat. Officia quis veniam laborum do aute labore reprehenderit consequat officia commodo cupidatat aliqua nostrud aliqua.
-                        Proident occaecat laboris reprehenderit eiusmod consequat excepteur magna esse eu non commodo. Nostrud deserunt mollit culpa laborum officia mollit culpa ipsum eu dolore eu. Aliqua qui non ea cillum excepteur cillum officia commodo id officia mollit. Occaecat proident ipsum tempor et.
-                    </p>
+                    <h1 id="planet-name"></h1>
+                    <h2 id="latin-name"class="fancy"></h2>
+                    <p id="desc"></p>
                 </div>
                 <div>
                     <div>
                         <h2>omkrets </h2>
-                        <h2>123456 km </h2>
+                        <h2 id="circumference"> km </h2>
                     </div>
                     <div>
-                        <h2>km från solen</h2>
-                        <h2>123345788 km </h2>
+                        <h2 >km från solen</h2>
+                        <h2 id="sun-distance"> km </h2>
                     </div>
                     <div>
                         <h2>max temperatur</h2>
-                        <h2>80C</h2>
+                        <h2 id="maxTemp">80C</h2>
                     </div>
                     <div>
                         <h2>lägsta temperatur </h2>
-                        <h2>-50C</h2>
+                        <h2 id="minTemp">-50C</h2>
                     </div>
                 </div>
                 <div>Månar
