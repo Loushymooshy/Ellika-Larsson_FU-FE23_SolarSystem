@@ -5,6 +5,8 @@ planetEventListner();
 const searchinput = document.querySelector("#searchbar__input"); 
 const formSearch = document.querySelector("#searchbar");
 
+// eventlistener på textsök. Element fylls i. 
+
 formSearch.addEventListener('submit', async function(event){
     event.preventDefault();
     let planet = await searchPlanets(searchinput.value);
@@ -30,7 +32,7 @@ formSearch.addEventListener('submit', async function(event){
 
        
     });
-
+// skrollar och ändrar färg på solen
     window.scrollTo({left: 0, top: document.body.scrollHeight, behavior: "smooth"});
 
     let sun = document.querySelector('.sun');

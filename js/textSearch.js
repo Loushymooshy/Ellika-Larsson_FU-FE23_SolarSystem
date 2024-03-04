@@ -1,5 +1,7 @@
 import { getPlanetInfo } from "./fetchAPI.js";
 
+// Hämtar API information till textsök.
+
 export async function searchPlanets(searchString) {
     console.log(searchString)
     let planets = await getPlanetInfo();

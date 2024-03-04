@@ -21,6 +21,8 @@ ul {
     width: 100vw;
     display: flex;
 }
+
+/* planeter */
 .planet-container {
    
     display: flex;
@@ -80,7 +82,7 @@ ul {
     width: 66px;
 }
 
-
+/* Klasser för att solen ska ändra färg */
 .sun.sun-merkurius {
     background-color: #888888;
  
@@ -149,14 +151,14 @@ ul {
     
 }
 
-
+/* Bakgrund */
 .blue-gradient {
     width: 100vh;
     height: auto;
     background-image: linear-gradient(to right,#0C164D ,#190B22 60%);
 }
 
-
+/* Solen */
 .sun {
     position: fixed;
     top: 50%; 
@@ -184,7 +186,7 @@ ul {
   .sun:hover {
     transform: scale(1.03) translateY(-50%);
     }
- 
+ /* Saturnus */
 .ring {
     width: 200px;
     height: 200px;
@@ -203,7 +205,7 @@ ul {
     border-radius: 100px 100px 0 0;
     background-color: #C7AA72;
 }
-
+/* Transform */
 .planet {
     transition: all .2s ease-in-out;
 }
@@ -218,7 +220,7 @@ ul {
 }
 
 
-/* Next section */
+/* information */
  .information {
     height: 100vh;
     width: 100vw;

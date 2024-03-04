@@ -1,3 +1,6 @@
+
+// Lyssnar efter klick på planeterna. När du klickar på en planet så får du tillbaka planetens id. API informationen filtreras så vi får tllbaka informtaionen till rätt planet. Sedan fylls html elementen i med rätt information.
+
 import { getPlanetInfo } from "./fetchAPI.js";
 
 export function planetEventListner() {
@@ -20,6 +23,7 @@ export function planetEventListner() {
             maxTempElement.innerText = planetChosen[0].temp.day;
             minTempElement.innerText = planetChosen[0].temp.night;   
            
+// Fyller i månarna
 
             const moonList = document.querySelector('#moon-list');
             moonList.innerHTML = '';
@@ -31,15 +35,17 @@ export function planetEventListner() {
 
                
             });
+// På planet klick så skrollar sidan ner till botten av sidan
 
             window.scrollTo({left: 0, top: document.body.scrollHeight, behavior: "smooth"});
-
+            
+// Ändrar färg på solen
             let sun = document.querySelector('.sun');
             sun.className = 'sun'
             sun.classList.add(`sun-${planetName.toLowerCase()}`);
             
 
-            // console.log(planetInfo);
+            // Fångar error
         } catch (error) {
             console.error('något gick fel:', error); 
         }

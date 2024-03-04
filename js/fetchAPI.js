@@ -1,9 +1,9 @@
+
+// Hämtar information från API om planeterna. API nyckeln importeras från en annan modul och används för att kunna få tillgång till API.
+
 import { getApiKey } from "./apiKey.js"; 
 export async function getPlanetInfo(planetName){
-   // let cachedData = JSON.parse(window.localStorage.getItem("planets"));
-   // if(cachedData){
-   //     return cachedData.filter(x => x.name.toLowerCase() === planetName.toLowerCase());
-   // }
+ 
 
     let apiKey = await getApiKey();
     try { 
@@ -12,9 +12,9 @@ export async function getPlanetInfo(planetName){
             headers: {'Content-Type': 'application/json','x-zocom': `${apiKey}`}
         });
         const data = await response.json();
-        //window.localStorage.setItem("planets", JSON.stringify(data.bodies))
+        
         return data;
-       // return data.bodies.filter(x => x.name.toLowerCase() === planetName.toLowerCase());
+       
     }
     catch (error) {
         console.error('error:', error);
